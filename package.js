@@ -1,6 +1,6 @@
 Package.describe({
   name: 'lukemadera:string',
-  version: '0.0.1',
+  version: '0.0.2',
   // Brief, one-line summary of the package.
   summary: 'Light weight string functions such as generating a random X length string',
   // URL to the Git repository containing the source code for this package.
@@ -13,6 +13,8 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.0.4.2');
   api.addFiles('string.js');
+
+  api.export('lmString');
 });
 
 Package.onTest(function(api) {
